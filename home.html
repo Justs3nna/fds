@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width device width, initial scale 1.0" name="viewport">
+  <title>Events</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="home.html" class="logo d-flex align-items-center">
+        <h1>FBTB<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul> 
+          <li><a href="orglist.html">Listed Organizations</a></li>
+          <li><a href="home.html">Events</a></li>
+          <li><a href="#">Locate</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header>
+
+  <section id="hero" class="hero py-5">
+    <div class="container py-2">
+        <div class="row align-items-center">
+            <div class="col">
+                <h2>Events</h2>
+            </div>
+            <div class="col text-end">
+                <button class="btn btn-primary" id="open-event-modal-button">Create Event</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal for Event Creation -->
+<div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <h2 class="modal-title">Create an Event</h2>
+      <form id="event-creation-form">
+        <div class="form-group">
+          <label for="event-title">Event Title</label>
+          <input type="text" id="event-title" name="event-title" class="form-control" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="event-date">Event Date</label>
+          <input type="date" id="event-date" name="event-date" class="form-control" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="event-duration">Event Duration (e.g., 2 hours)</label>
+          <input type="text" id="event-duration" name="event-duration" class="form-control" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="event-description">Event Description</label>
+          <textarea id="event-description" name="event-description" class="form-control" rows="4" required></textarea>
+        </div>
+  
+      </form>
+      <button class="btn btn-primary mt-2" type="submit">Create Event</button>
+    </div>
+  </div>
+  
+
+  <!-- Section for Displaying Events -->
+  <section id="event-list" class="py-5">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="event-list">
+        <!-- Event listings will be displayed here -->
+        <!-- Example event listing -->
+        <div class="event">
+          <h3>Event Title</h3>
+          <p>Date: Event Date</p>
+          <p>Duration: Event Duration</p>
+          <p>Description: Event Description</p>
+          <p>Author: Event Author</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/events.js"></script>
+</body>
+
+</html>
